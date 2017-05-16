@@ -1,1 +1,73 @@
-stuff
+body {
+  text-align: center;
+  background: #3a3a3a;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 20px;
+}
+
+h1 {
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+.clock {
+  font-family: sans-serif;
+  color: #bfbfbf;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.clock > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #000000;
+  display: inline-block;
+}
+
+.clock .counter {
+  padding: 15px;
+  border-radius: 3px;
+  background: #ffffff;
+  display: inline-block;
+  text-align: center;
+  min-width: 1.1em;
+}
+
+.clock .controls {
+  text-align: center;
+  padding: 0 5px;
+  border-radius: 3px;
+  background: #ad0500;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.clock .controls .increase {
+  line-height: 1.1;
+}
+
+.clock .controls .decrease {
+  border-top: 1px solid #00715A;
+  line-height: 0.9;
+}
+
+.clock.active .controls {
+  color: #999;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
