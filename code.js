@@ -38,31 +38,9 @@ function initializeClock(id, endtime) {
     }
   }
 
-  updateClock(); 
-  timeinterval = setInterval(updateClock, 1000);
+  updateClock(); // removed } - unnecessary curly brace
+  timeinterval = setInterval(updateClock, 1000); // removed () - unnecessary braces after updateClock
 }
-
- secondsSpan.innerHTML = 0;
-    function increase() {
-        if (i < 59) {
-            i++;
-        } else if (seconds = 59) {
-            i = 0;
-        }
-        document.getElementById().innerHTML = i;
-    }
-
-    function decrease() {
-        if (i > 0) {
-            --i;
-        } else if (seconds = 0) {
-            i = 59;
-        }
-        document.getElementById().innerHTML =i;
-    }
-
-
-
 //initializeClock.call(id, endtime);
 //updateClock.call();
 
@@ -76,7 +54,3 @@ function startTimer(id) {
 var deadline = new Date(Date.now() + (days * 86400 + hours * 3600 + minutes * 60 + seconds) * 1000);
 initializeClock('clockdiv', deadline);
 }
-
-
-
-
