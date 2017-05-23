@@ -25,11 +25,154 @@
 <h4>-------------------------------------------------------------------------</h4>
     
 <h4> here is my timer project</h4>
+    <h4>CSS</h4>
     <pre>
        <code>
-            ""
+            "body {
+  text-align: center;
+  background: #3a3a3a;
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 20px;
+}
+
+h1 {
+  color: #396;
+  font-weight: 100;
+  font-size: 40px;
+  margin: 40px 0px 20px;
+}
+
+.clock {
+  font-family: sans-serif;
+  color: #bfbfbf;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.clock > div {
+  padding: 10px;
+  border-radius: 3px;
+  background: #000000;
+  display: inline-block;
+}
+
+.clock .counter {
+  padding: 15px;
+  border-radius: 3px;
+  background: #ffffff;
+  display: inline-block;
+  text-align: center;
+  min-width: 1.1em;
+}
+
+.clock .controls {
+  text-align: center;
+  padding: 0 5px;
+  border-radius: 3px;
+  background: #ad0500;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+}
+
+.clock .controls .increase {
+  line-height: 1.1;
+}
+
+.clock .controls .decrease {
+  border-top: 1px solid #00715A;
+  line-height: 0.9;
+}
+
+.clock.active .controls {
+  color: #999;
+}
+
+.smalltext {
+  padding-top: 5px;
+  font-size: 16px;
+}
         </code>
     </pre>
+<h4>HTML</h4>
+    <pre>
+        <code>
+            "<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+         <body>  
+        
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="videos.html">Videos</a></li>
+  <li><a href="code.html">Projects</a></li>
+  <li><a class="active" href="timer">Timer</a></li>
+        </body>    
+
+    <head>
+       <link rel="icon" href="" type="image/gif" sizes="16x16">
+        <body style="background-color:#1E1F1F;">
+        
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>THE MULTI-SITE/Home</title>
+        <script src="code.js" type="text/javascript" charset="utf-8"></script>        
+        <link href="code.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+    
+<h1>Countdown To</h1>
+  <div id="clockdiv" class="clock">
+      
+      
+    <div class="days">
+      <span class="title">Days: </span><div class="counter">0</div>
+      <div class="controls"><div class="increase">+</div><div class="decrease">–</div></div>
+      <input type="hidden" name="days" value="0">
+    </div>
+    
+    
+    <div class="hours">
+      <span class="title">Hours: </span><div class="counter">00</div>
+      <div class="controls"><div class="increase">+</div><div class="decrease">–</div></div>
+      <input type="hidden" name="hours" value="0">
+    </div>
+    
+    
+    <div class="minutes">
+      <span class="title">Minutes: </span><div class="counter">00</div>
+      <div class="controls"><div class="increase">+</div><div class="decrease">–</div></div>
+      <input type="hidden" name="minutes" value="0">
+    </div>
+    
+    
+    <div class="seconds">
+      <span class="title">Seconds: </span><div class="counter">00</div>
+      <div class="controls"><div class="increase">+</div><div class="decrease">–</div></div>
+      <input type="hidden" name="seconds" value="0">
+    </div>
+    
+    
+    <button type="button" class="start-stop">Click me</button>
+    
+    
+<script src="code.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>"
+    </code>
+</pre>
+
 
 
     </body>
