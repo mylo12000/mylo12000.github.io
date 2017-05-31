@@ -15,6 +15,7 @@ function getTimeRemaining(endtime) {
   };
 }
 
+
 function initializeClock(id, endtime) {
   if (timeinterval) {
     clearInterval(timeinterval);
